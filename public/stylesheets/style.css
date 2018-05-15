@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 50px;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: rgb(2, 0, 36) no-repeat center center fixed;
+  background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(43, 62, 80, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    )
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url("/images/indexBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4e5d6c;
+  box-shadow: 7px 7px 10px 0px rgba(43, 62, 83, 1);
+}
+
+.jumbotron p {
+  padding-top: 6px;
+  font-size: 18px;
+}
+
+.thumbnail {
+  box-shadow: 7px 7px 10px 0px rgba(43, 62, 83, 1);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+a {
+  color: #00b7ff;
+}
+
+#nav-links {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#navbar-inverse {
+  font-size: 14px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.btn-toolbar {
+  display: -webkit-inline-box;
+}
+
+#btnGroup {
+  margin-right: 5px;
+}
+
+#inputTaskName {
+  height: 30px;
+}
+
+#inputTaskDesc {
+  height: 30px;
+  width: 165px;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+#inputTaskDesc:focus {
+  width: 500px;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4e5d6c;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  box-shadow: 5px 5px 8px 0px rgba(43, 62, 83, 1);
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #df691a;
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}

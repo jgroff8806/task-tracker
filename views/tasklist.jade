@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	.container
+
+		h1.
+			Task List
+		div
+			each task, i in tasks
+				.thumbnail
+					.caption
+						h3
+							task.task= task.task
+						p
+							task.task= task.description
+						.btn-toolbar(role='toolbar', aria-label='Toolbar of buttons')
+							a( href="/update/#{task.id}" ).btn.btn-primary#btnGroup
+								i.fas.fa-edit.fa-fw.fa-lg(aria-hidden="true")
+								| Update
+							form(method="post" action="/removetask/#{task.id}")
+								button(type="submit").btn.btn-danger#btnGroup
+									i.fas.fa-trash-alt.fa-fw.fa-lg(aria-hidden="true")
+									| Delete
+
+	//- Scroll to top button
+	a#return-to-top
+		i.icon-chevron-up

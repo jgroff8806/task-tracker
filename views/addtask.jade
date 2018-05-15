@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        h1= title
+        form#formAddTask(name="addtask",method="post",action="/addtask")
+            input.input-block-level#inputTaskName(type="text", placeholder="Task Name", name="taskname", autofocus, required='', pattern="[a-zA-Z ]+", title="Text only, no numbers or special characters")
+            #[br]
+            #[br]
+            input#inputTaskDesc(type="text", placeholder="Task Description", name="taskdesc", required='')
+            #[br]
+            #[br]
+            button.btn.btn-primary#btnGroup(type="submit")
+                i.fa.fa-check.fa-fw.fa-lg(aria-hidden="true")
+                | Submit
+
